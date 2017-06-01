@@ -1,4 +1,3 @@
-# basic web template
+# TechImpact
 
-Basic web template for projects. After cloning this to local computer,
-remember to change the origin with $ git remote set-url origin ...
+description of HTML, CSS & JS

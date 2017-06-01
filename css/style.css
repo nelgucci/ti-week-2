@@ -1,3 +1,129 @@
 *{
-	box-sizing: border-box;padding: 0;margin: 0;
+	box-sizing: border-box;
+	padding: 0;margin: 0;
 }
+
+
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+nav.main-nav {
+	background: darkblue;
+		min-height: 60px;
+	line-height: 60px;	padding: 0;
+}
+
+
+nav.main-nav .brand{
+	float: left;
+	margin-left: 20px;
+	font-size: 30px;
+	color: white;
+	text-decoration: none;
+	background-color: darkblue;
+
+}
+
+nav.main-nav ul {
+	list-style: none;
+	float: right;
+	background-color: darkblue; 
+}
+nav.main-nav ul li {
+	float: left;
+	margin: 0px 15px;
+}
+
+nav.main-nav ul li a {
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	position: relative;
+}
+
+nav.main-nav ul li a::after {
+	content: " ";
+	background: darkblue;
+	position: absolute;
+	height: 3px;
+	width: 0%;
+	bottom: -20%;
+	left: 50%;
+}
+
+.header{
+	padding: 0;
+}
+
+h1 {
+	padding: 40px;
+	text-align: center;
+	font-size: 70px;
+	color: white;
+	background-color: #25507B;
+	border-style: double;
+	border-width: 10px;
+}
+
+
+.col-1-3{
+/*	border-style: inset;*/
+
+  	float:left;
+  	width:30.33%;
+  	padding:10px;
+  	margin:1%;
+  	font-size: 20px;
+  }
+
+  .html-img {
+  	padding: 10px;
+  	width: 100%;
+/*  	margin: 0px auto;*/
+  	position: relative;
+  	/*min-width: 300px;*/
+  }
+
+  .html-img img{
+  	width: 100%;
+  	transition: 1s
+  }
+  .css-img {
+  	padding: 10px;
+  	width: 100%;
+/*  	margin: 0px auto;*/
+  	position: relative;
+  	/*min-width: 300px;*/
+  }
+
+  .css-img img{
+  	width: 100%;transition: 1s;
+  }
+  .js-img {
+  	padding: 10px;
+  	width: 100%;
+/*  	margin: 0px auto;*/
+  	position: relative;
+  	/*min-width: 300px;*/
+  }
+
+  .js-img img{
+  	width: 100%;transition: 1s
+  }
+  .html-img:hover img{
+  	filter: brightness(80%);
+  	background-color: grey;
+  	border-radius: 50%;
+  }
+  .css-img:hover img{
+  	filter: brightness(80%);
+  	background-color: grey;
+  	border-radius: 50%;
+  }
+  .js-img:hover img{
+  	filter: brightness(80%);
+  	background-color: grey;
+  	border-radius: 50%;
+  }
